@@ -1,0 +1,214 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Poppins", Arial, sans-serif;
+
+}
+
+
+
+body {
+
+  background: linear-gradient(180deg, #0b3d2e, #0b5ed7);
+
+  color: #e6f4f1;
+
+  line-height: 1.7;
+
+}
+
+
+
+/* NAVBAR */
+
+nav {
+
+  position: sticky;
+
+  top: 0;
+
+  background: rgba(5, 30, 30, 0.9);
+
+  backdrop-filter: blur(8px);
+
+  padding: 15px 40px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+
+
+nav strong {
+
+  color: #4ade80;
+
+  font-size: 1.2rem;
+
+}
+
+
+
+nav a {
+
+  color: #e6f4f1;
+
+  margin-left: 20px;
+
+  text-decoration: none;
+
+  font-weight: 500;
+
+}
+
+
+
+nav a:hover {
+
+  color: #7dd3fc;
+
+}
+
+
+
+/* HERO */
+
+.hero {
+
+  min-height: 90vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px;
+
+}
+
+
+
+.hero h1 {
+
+  font-size: 3rem;
+
+  color: #7dd3fc;
+
+}
+
+
+
+.hero p {
+
+  max-width: 650px;
+
+  margin: 15px auto;
+
+  color: #c7ecee;
+
+}
+
+
+
+/* BUTTON */
+
+.btn {
+
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 12px 32px;
+
+  border-radius: 30px;
+
+  border: 1px solid #4ade80;
+
+  color: #4ade80;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+
+}
+
+
+
+.btn:hover {
+
+  background: #4ade80;
+
+  color: #0a2a2a;
+
+}
+
+
+
+/* SECTIONS */
+
+.section {
+
+  max-width: 1000px;
+
+  margin: auto;
+
+  padding: 80px 40px;
+
+}
+
+
+
+.card {
+
+  background: rgba(255, 255, 255, 0.08);
+
+  padding: 30px;
+
+  border-radius: 14px;
+
+  margin-top: 25px;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+  text-align: center;
+
+  padding: 30px;
+
+  color: #b2f5ea;
+
+  font-size: 0.9rem;
+
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+
+    font-size: 2.2rem;
+
+  }
+
+}
+
