@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Silent Warming Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">Climate</a>
+  <a href="sdg.html">SDGs</a>
+  <a href="action.html">Action</a>
+  <a href="quiz.html">Quiz</a>
+</nav>
+
+<h1>Climate Awareness Quiz</h1>
+<p>Test your knowledge about silent warming and climate change.</p>
+
+<form id="quiz">
+
+  <p><b>1. What causes silent warming?</b></p>
+  <input type="radio" name="q1" value="a"> Natural cycles only<br>
+  <input type="radio" name="q1" value="b"> Greenhouse gases from human activities<br>
+  <input type="radio" name="q1" value="c"> Earth moving closer to the Sun<br>
+
+  <p><b>2. Which gas contributes most to global warming?</b></p>
+  <input type="radio" name="q2" value="a"> Oxygen<br>
+  <input type="radio" name="q2" value="b"> Carbon dioxide<br>
+  <input type="radio" name="q2" value="c"> Nitrogen<br>
+
+  <p><b>3. Which action helps reduce climate change?</b></p>
+  <input type="radio" name="q3" value="a"> Using more plastic<br>
+  <input type="radio" name="q3" value="b"> Saving electricity<br>
+  <input type="radio" name="q3" value="c"> Cutting trees<br>
+
+  <br><br>
+  <button type="button" onclick="checkAnswers()">Submit</button>
+</form>
+
+<h2 id="result"></h2>
+
+<script>
+function checkAnswers() {
+  let score = 0;
+
+  if (document.querySelector('input[name="q1"]:checked')?.value === "b") score++;
+  if (document.querySelector('input[name="q2"]:checked')?.value === "b") score++;
+  if (document.querySelector('input[name="q3"]:checked')?.value === "b") score++;
+
+  document.getElementById("result").innerHTML =
+    "You scored " + score + " out of 3";
+}
+</script>
+
+</body>
+</html>
